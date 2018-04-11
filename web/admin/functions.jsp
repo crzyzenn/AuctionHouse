@@ -26,6 +26,10 @@
         }
 
     }
+    else if(request.getParameter("logout") != null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
     else {
         Connect con = new Connect();
         Statement stm = con.getStatement();

@@ -4,13 +4,12 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Admin | Login</title>
+	<title>Admin Portal</title>
 	<link rel = 'stylesheet' media="screen" href = '../bs/css/bootstrap.css'>
 	<script src="../bs/js/jquery.js"></script>
 	<script type="text/javascript" src = '../bs/js/bootstrap.js'></script>	
 	<script type="text/javascript" src = '../bs/js/notify.js'></script>		
 	<script defer src="../bs/js/fontawesome-all.js"></script>
-
 	<script type="text/javascript">
 		
 		$(document).ready(function(){
@@ -55,27 +54,26 @@
 		});
 	</script>
 </head>
-<header>
-	<div id = 'bar'>
-		<h1>Auction</h1>					
-	</div>		
-</header>
+<!--<header>-->
+	<!--<div id = 'bar'>-->
+        <!--<img src="../Images/logo.jpg" alt="Logo">-->
+	<!--</div>		-->
+<!--</header>-->
 
 <div class="jumbotron">
-	<div class="container">
+	<div class="container" style="
+    width: 30%;
+    background-color:  #2a2725;
+    color: white;
+    padding: 5em;
+">
 	<%
 		if(session.getAttribute("user") == null || session.getAttribute("user") == ""){
-			out.println("No users logged in"); 
-		}
-		else{
-			out.println("Logged in as " + session.getAttribute("user"));
-		}
-		
-		// out.println(session.getAttribute("user"));
+            // out.println(session.getAttribute("user"));
 
 			
 	%>
-		<h1><span class = 'glyphicon glyphicon-user'></span> Login</h1>
+		<h1 class="text-center"><i class="fa fa-user-circle" aria-hidden="true"></i></h1>
 		<br>
 		<div class = 'errorDiv'></div>
 		
@@ -105,9 +103,11 @@
 		</div>
 	</div>
 
-<?
+<%
 }
-else{	
-	header('Location:dashboard.php');
+
+else{
+    response.sendRedirect("dashboard.jsp");
 }
-?>
+%>
+

@@ -2366,144 +2366,243 @@ if (typeof jQuery === 'undefined') {
   
   // Auction scripts
   $(document).ready(function(){
-	  $('#category').on('change', function(){
-		 // Remove dynamic elements
-		 $('.new').remove();
-		  
-		 // Dynamic elem added on every category on press
-		 var elem = "";
-		 var category = $('#category').val(); 
-		 if(category == "Drawing"){
-			 elem = "<tr class = 'new'>" +
-			 			"	<td>Medium</td>" +	
-			 			"	<td>" +
-			 			"		<select name = 'medium' class = 'form-control'>" +
-			 			"			<option value = 'Pencil'>Pencil</option>" +
-			 			"			<option value = 'Ink'>Ink</option>" +
-			 			"			<option value = 'Charcoal'>Charcoal</option>" +
-			 			"			<option value = 'Other'>Other</option>" +
-			 			"		</select>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Type</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>" +
-			 			"		<input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Dimensions</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
-			 			"	</td>" +
-			 			"</tr>"; 		 
-		 }
-		 
-		 else if(category == "Painting"){
-			 elem = "<tr class = 'new'>" +
-			 			"	<td>Medium</td>" +	
-			 			"	<td>" +
-			 			"		<select name = 'medium' class = 'form-control'>" +
-			 			"			<option value = 'Oil'>Oil</option>" +
-			 			"			<option value = 'Acrylic'>Acrylic</option>" +
-			 			"			<option value = 'Water Colour'>Water Colour</option>" +
-			 			"			<option value = 'Other'>Other</option>" +
-			 			"		</select>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Type</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>" +
-			 			"		<input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Dimensions</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
-			 			"	</td>" +
-			 			"</tr>"; 
-		
-				 
-		 }
-		 else if(category == "Photography"){
-			 elem = "<tr class = 'new'>" +
-			 			"	<td>Type of Image</td>" +	
-			 			"	<td>" +
-			 			"		<select name = 'medium' class = 'form-control'>" +
-			 			"			<option value = 'Black and White'>Black & White</option>" +
-			 			"			<option value = 'Colour'>Colour</option>" +
-			 			"		</select>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Dimensions</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
-			 			"	</td>" +
-			 			"</tr>"; 
-			 
-				 
-		 }
-		 else if(category == "Sculpture"){
-			 elem = "<tr class = 'new'>" +
-			 			"	<td>Medium</td>" +	
-			 			"	<td>" +
-			 			"		<select name = 'medium' class = 'form-control'>" +
-			 			"			<option value = 'Bronze'>Bronze</option>" +
-			 			"			<option value = 'Marble'>Marble</option>" +
-			 			"			<option value = 'Pewter'>Pewter</option>" +
-			 			"			<option value = 'Other'>Other</option>" +
-			 			"		</select>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Dimensions</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Approx. Weight (kg)</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'number' name = 'weight' step = 'any' class = 'form-control' placeholder = 'Weight in KG'>" +
-			 			"	</td>" +
-			 			"</tr>";	 
-		 }
-		 
-		 else if(category == "Carving"){
-			 elem = "<tr class = 'new'>" +
-			 			"	<td>Medium</td>" +	
-			 			"	<td>" +
-			 			"		<select name = 'medium' class = 'form-control'>" +
-			 			"			<option value = 'Oak'>Oak</option>" +
-			 			"			<option value = 'Beach'>Beach</option>" +
-			 			"			<option value = 'Pine'>Pine</option>" +
-			 			"			<option value = 'Willow'>Willow</option>" +
-			 			"			<option value = 'Other'>Other</option>" +
-			 			"		</select>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Dimensions</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
-			 			"	</td>" +
-			 			"</tr>" +
-			 			"<tr class = 'new'>" +
-			 			"	<td>Approx. Weight (kg)</td>" +	
-			 			"	<td>" +
-			 			"		<input type = 'number' name = 'weight' step = 'any' class = 'form-control' placeholder = 'Weight in KG'>" +
-			 			"	</td>" +
-			 			"</tr>";	 
-		 }
-		 
-		 $(this).closest('tr').after(elem);
+      var elem = "";
+      var category = "";
+
+      $(document).on('click', '.submit', function(){
+          $(this).closest('div').prev().contents().filter('.updateForm').submit();
+      });
+
+
+
+
+      // Register
+       $('#register').on('click', function(){
+
+           var password = $('#password').val();
+           var confirm = $('#confirmPass').val();
+           console.log(password);
+           console.log(confirm);
+           // return false;
+           if(password == confirm){
+               return true;
+           }
+           else{
+                $('#register').notify("Username & Password isn't correct!", {className: 'error', autoHideDelay:1000, position:'right middle', showAnimation: 'fadeIn', showDuration:200, hideAnimation: 'fadeToggle'});
+                return false;
+           }
+       });
+      // End of register
+
+
+
+      // Form validation
+      $('#search').on('keyup', function() {
+          $.ajax({
+              type: 'POST',
+              url: 'searchResponse.jsp',
+              data: {
+                  'search': $('#search').val(),
+                  'filter': $('.filterBy').val()
+              },
+              success: function(msg){
+                console.log(msg);
+                $('.pre-scrollable').html(msg);
+                  // if (msg.length !== 12) {
+                  //     window.location = 'dashboard.jsp';
+                  // }
+                  // else{
+                  //     var content = '<div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title"><i class = "glyphicon glyphicon-remove-sign"></i> Username or password is incorrect</h3></div></div>';
+                  //     $('.errorDiv').html(content);
+                  // }
+              }
+          });
+      });
+      // End of form validation
+
+
+
+
+      //Whatever category is selected, Load the contents of that category in the edit form
+      // formGenerate($('#category').val());
+      // $('.editModal').on('click', function () {
+      //
+      //   var value = $(this).closest('tr').contents().filter('td:nth-child(3)').text();
+      //   $('.categoryModal').val(value);
+      //   formGenerate("custom", value);
+      //   $('.categoryClass').after(elem);
+      // });
+
+      function formGenerate(action, cat){
+
+        // Remove dynamic elements
+        $('.new').remove();
+
+
+        if(action == "add"){
+            // Dynamic elem added on every category on press
+            category = $('#category').val();
+        }
+        else if(action == "custom"){
+          category = cat;
+        }
+        else if(action == "edit"){
+          console.log("Inside edit");
+          category = $('.categoryModal').val();
+        }
+        else{
+            // Dynamic elem added on every category on press
+            category = $('#categoryModal').val();
+        }
+        console.log("Category = " + category);
+
+          if(category == "Drawing"){
+              elem = "<tr class = 'new'>" +
+                  "	<td>Medium</td>" +
+                  "	<td>" +
+                  "		<select name = 'medium' class = 'form-control'>" +
+                  "			<option value = 'Pencil'>Pencil</option>" +
+                  "			<option value = 'Ink'>Ink</option>" +
+                  "			<option value = 'Charcoal'>Charcoal</option>" +
+                  "			<option value = 'Other'>Other</option>" +
+                  "		</select>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Type</td>" +
+                  "	<td>" +
+                  "		<input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>" +
+                  "		<input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Dimensions</td>" +
+                  "	<td>" +
+                  "		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
+                  "	</td>" +
+                  "</tr>";
+          }
+
+          else if(category == "Painting"){
+              elem = "<tr class = 'new'>" +
+                  "	<td>Medium</td>" +
+                  "	<td>" +
+                  "		<select name = 'medium' class = 'form-control'>" +
+                  "			<option value = 'Oil'>Oil</option>" +
+                  "			<option value = 'Acrylic'>Acrylic</option>" +
+                  "			<option value = 'Water Colour'>Water Colour</option>" +
+                  "			<option value = 'Other'>Other</option>" +
+                  "		</select>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Type</td>" +
+                  "	<td>" +
+                  "		<input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>" +
+                  "		<input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Dimensions</td>" +
+                  "	<td>" +
+                  "		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
+                  "	</td>" +
+                  "</tr>";
+
+
+          }
+          else if(category == "Photography"){
+              elem = "<tr class = 'new'>" +
+                  "	<td>Type of Image</td>" +
+                  "	<td>" +
+                  "		<select name = 'medium' class = 'form-control'>" +
+                  "			<option value = 'Black and White'>Black & White</option>" +
+                  "			<option value = 'Colour'>Colour</option>" +
+                  "		</select>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Dimensions</td>" +
+                  "	<td>" +
+                  "		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
+                  "	</td>" +
+                  "</tr>";
+
+
+          }
+          else if(category == "Sculpture"){
+              elem = "<tr class = 'new'>" +
+                  "	<td>Medium</td>" +
+                  "	<td>" +
+                  "		<select name = 'medium' class = 'form-control'>" +
+                  "			<option value = 'Bronze'>Bronze</option>" +
+                  "			<option value = 'Marble'>Marble</option>" +
+                  "			<option value = 'Pewter'>Pewter</option>" +
+                  "			<option value = 'Other'>Other</option>" +
+                  "		</select>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Dimensions</td>" +
+                  "	<td>" +
+                  "		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Approx. Weight (kg)</td>" +
+                  "	<td>" +
+                  "		<input type = 'number' name = 'weight' step = 'any' class = 'form-control' placeholder = 'Weight in KG'>" +
+                  "	</td>" +
+                  "</tr>";
+          }
+
+          else if(category == "Carving"){
+              elem = "<tr class = 'new'>" +
+                  "	<td>Medium</td>" +
+                  "	<td>" +
+                  "		<select name = 'medium' class = 'form-control'>" +
+                  "			<option value = 'Oak'>Oak</option>" +
+                  "			<option value = 'Beach'>Beach</option>" +
+                  "			<option value = 'Pine'>Pine</option>" +
+                  "			<option value = 'Willow'>Willow</option>" +
+                  "			<option value = 'Other'>Other</option>" +
+                  "		</select>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Dimensions</td>" +
+                  "	<td>" +
+                  "		<input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>" +
+                  "	</td>" +
+                  "</tr>" +
+                  "<tr class = 'new'>" +
+                  "	<td>Approx. Weight (kg)</td>" +
+                  "	<td>" +
+                  "		<input type = 'number' name = 'weight' step = 'any' class = 'form-control' placeholder = 'Weight in KG'>" +
+                  "	</td>" +
+                  "</tr>";
+          }
+
+          // console.log(elem);
+      }
+
+      //  Form jQuery on add Items
+      $('#category').on('change', function(){
+        formGenerate("add", "");
+          $(this).closest('tr').after(elem);
 	  });
+
+      // From jQuery on edit Items
+      $(document).on('change', '.categoryModal', function(){
+          // console.log("On change");
+          // console.log("Category selected = " + $(this).val());
+          formGenerate("custom", $(this).val());
+          // $(this).closest(').after(elem);
+          $(this).closest('.categoryClass').after(elem);
+      });
   });
-  
+
+
   // Auction scripts
 
 
