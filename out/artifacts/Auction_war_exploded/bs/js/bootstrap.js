@@ -2369,6 +2369,104 @@ if (typeof jQuery === 'undefined') {
       var elem = "";
       var category = "";
 
+      // Admin login form validation
+      $('#login').on('click', function(event) {
+          $.ajax({
+              type: 'POST',
+              // make sure you respect the same origin policy with this url:
+              // http://en.wikipedia.org/wiki/Same_origin_policy
+              url: 'loginResponse.jsp',
+              data: {
+                  'username': $('#username').val(),
+                  'password': $('#password').val()
+
+              },
+              success: function(msg){
+                  if (msg.length !== 12) {
+                      window.location = 'dashboard.jsp';
+                  }
+                  else{
+                      var content = '<div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title"><i class = "glyphicon glyphicon-remove-sign"></i> Username or password is incorrect</h3></div></div>';
+                      $('.errorDiv').html(content);
+                  }
+              }
+          });
+      });
+      // End of form validation
+
+      // Client login form validation
+      $('#clientLogin').on('click', function(event) {
+          $.ajax({
+              type: 'POST',
+              // make sure you respect the same origin policy with this url:
+              // http://en.wikipedia.org/wiki/Same_origin_policy
+              url: 'loginResponse.jsp',
+              data: {
+                  'username': $('#username').val(),
+                  'password': $('#password').val()
+
+              },
+              success: function(msg){
+                  if (msg.length !== 12) {
+                      window.location = 'clients/index.jsp';
+                  }
+                  else{
+                      var content = '<div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title"><i class = "glyphicon glyphicon-remove-sign"></i> Username or password is incorrect</h3></div></div>';
+                      $('.errorDiv').html(content);
+                  }
+              }
+          });
+      });
+      // End of form validation
+
+      // Support login form validation
+      $('#supportLogin').on('click', function(event) {
+          $.ajax({
+              type: 'POST',
+              // make sure you respect the same origin policy with this url:
+              // http://en.wikipedia.org/wiki/Same_origin_policy
+              url: 'loginResponse.jsp',
+              data: {
+                  'username': $('#username').val(),
+                  'password': $('#password').val()
+
+              },
+              success: function(msg){
+                  if (msg.length !== 12) {
+                      window.location = 'index.jsp?loggedin';
+                  }
+                  else{
+                      var content = '<div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title"><i class = "glyphicon glyphicon-remove-sign"></i> Username or password is incorrect</h3></div></div>';
+                      $('.errorDiv').html(content);
+                  }
+              }
+          });
+      });
+      // End of form validation
+
+
+      $('.container').on('keyup', function(){
+          $('.errorDiv').html("");
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       $(document).on('click', '.submit', function(){
           $(this).closest('div').prev().contents().filter('.updateForm').submit();
       });

@@ -20,37 +20,6 @@
 				var uploadBar = "<tr><td></td><td><input type='file' id = 'uploadField' name='myImage" + (++a) + "' class='form-control'></td><td><button class = 'btn-sm btn-danger' onclick = 'return false;' id = 'remove'><span class = 'glyphicon glyphicon-remove'></span></button></td></div></tr>"; 
 				$("#uploadDiv").append(uploadBar); 
 			});
-
-		    // Form validation
-		    $('#login').on('click', function(event) {
-		    	$.ajax({
-	              type: 'POST',
-	              // make sure you respect the same origin policy with this url:
-	              // http://en.wikipedia.org/wiki/Same_origin_policy
-	              url: 'loginResponse.jsp',
-	              data: { 
-	                  'username': $('#username').val(),
-	                  'password': $('#password').val() 
-	                  
-	              },
-	              success: function(msg){	                  
-	            	  if (msg.length !== 12) {	                  	
-	                	  window.location = 'dashboard.jsp'; 
-	                  }
-	                  else{
-	                  	var content = '<div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title"><i class = "glyphicon glyphicon-remove-sign"></i> Username or password is incorrect</h3></div></div>'; 
-	                  	$('.errorDiv').html(content);
-	                  }  
-	              }
-	          }); 
-		    });
-		    // End of form validation
-		    
-		    
-		    $('.container').on('keyup', function(){
-		    	$('.errorDiv').html("");
-		    }); 
-
 		});
 	</script>
 </head>

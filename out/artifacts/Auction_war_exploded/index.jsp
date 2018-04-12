@@ -44,14 +44,14 @@
       <%
         if (url.equals("/register.jsp")){
       %>
-          <a href = "register.jsp" data-toggle = 'tooltip' data-placement = 'bottom' title = 'Login'><span class = 'glyphicon glyphicon-log-in'></span></a>
+          <a href = "login.jsp" data-toggle = 'tooltip' data-placement = 'bottom' title = 'Login'><span class = 'glyphicon glyphicon-log-in'></span></a>
           <a href = "register.jsp" class = 'active' data-toggle = 'tooltip' data-placement = 'bottom' title = 'Register'><span class = 'fa fa-user-plus'></span></a>
       <%
         }
 
         else{
       %>
-        <a href = "register.jsp" data-toggle = 'tooltip' data-placement = 'bottom' title = 'Login'><span class = 'glyphicon glyphicon-log-in'></span></a>
+        <a href = "login.jsp" data-toggle = 'tooltip' data-placement = 'bottom' title = 'Login'><span class = 'glyphicon glyphicon-log-in'></span></a>
         <a href = "register.jsp" data-toggle = 'tooltip' data-placement = 'bottom' title = 'Register'><span class = 'fa fa-user-plus'></span></a>
       <%
         }

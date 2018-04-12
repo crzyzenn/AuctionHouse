@@ -9,6 +9,29 @@
 <jsp:include page="index.jsp"></jsp:include>
 
 <section class = "homeRight pull-right">
+    <%
+        if(request.getParameter("registered") != null){
+//            out.println("<h2 class='text-center'>Thank you for registering!</h2>");
+//            out.println("<p class='text-center'>You can now proceed to the login page to Log in!</p>");
+//            out.println("<a class = 'btn btn-primary' href = '#'>Login</button>");
+    %>
+        
+    <div class="jumbotron">
+    	<div class="container" style = "color: white;">
+    		<h1>Thank you for registering!</h1>
+    		<p>You may now log in.</p>
+    		<p>
+    			<a class="btn btn-primary" href = "#">Login</a>
+    		</p>
+    	</div>
+    </div>
+    
+    <%
+
+        }
+        else{
+
+    %>
         <h2 class="text-center">REGISTERING</h2>
         <ul class="nav nav-tabs" style="margin: 0 auto; width: fit-content; color: white; font-weight: 1000;">
             <li class="active"><a data-toggle="tab" href="#home">As Buyer</a></li>
@@ -228,3 +251,6 @@
         </div>
 
 </section>
+<%
+    }
+%>

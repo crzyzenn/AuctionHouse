@@ -24,9 +24,11 @@
     try{
         Statement stm = con.getStatement();
         stm.executeQuery(query);
+        response.sendRedirect("register.jsp?registered");
         con.closeConnection();
     }
     catch (Exception e){
+        response.sendRedirect("register.jsp?registered");
         con.closeConnection();
     }
 
