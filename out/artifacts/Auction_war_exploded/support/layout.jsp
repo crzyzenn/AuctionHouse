@@ -52,24 +52,11 @@
             }
             else {
                 if (url.equals("/support/dashboard.jsp")) {
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li class = 'active'><i class = 'fas fa-industry'></i></li></a>");
+                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li class = 'active'><i class = 'fas fa-home'></i></li></a>");
                     out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Sales Requests' class = 'myLink' href='sales_request.jsp'><li><i class='fas fa-envelope'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Settings' class = 'myLink' href='settings.jsp'><li>    <i class='fa fa-cog'></i></li></a>");
-                } else if (url.equals("/clients/request.jsp")) {
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='index.jsp'><li><i class = 'fas fa-industry'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Request a sale' class = 'myLink' href='request.jsp'><li class = 'active'><i class='fas fa-hand-paper'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending requests' class = 'myLink' href='pending.jsp'><li><i class='fas fa-file-alt'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Settings' class = 'myLink' href='settings.jsp'><li>    <i class='fa fa-cog'></i></li></a>");
-                } else if (url.equals("/clients/pending.jsp")) {
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='index.jsp'><li><i class = 'fas fa-industry'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Request a sale' class = 'myLink' href='request.jsp'><li><i class='fas fa-hand-paper'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending requests' class = 'myLink' href='pending.jsp'><li class = 'active'><i class='fas fa-file-alt'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Settings' class = 'myLink' href='settings.jsp'><li>    <i class='fa fa-cog'></i></li></a>");
-                } else if (url.equals("/clients/settings.jsp")) {
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='index.jsp'><li><i class = 'fas fa-industry'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Request a sale' class = 'myLink' href='request.jsp'><li><i class='fas fa-hand-paper'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending requests' class = 'myLink' href='pending.jsp'><li><i class='fas fa-file-alt'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Settings' class = 'myLink' href='settings.jsp'><li class = 'active'><i class='fa fa-cog'></i></li></a>");
+                } else if (url.equals("/support/sales_request.jsp")) {
+                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='index.jsp'><li><i class = 'fas fa-home'></i></li></a>");
+                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Sales Requests' class = 'myLink' href='sales_request.jsp'><li class = 'active'><i class='fas fa-envelope'></i></li></a>");
                 }
             }
         %>

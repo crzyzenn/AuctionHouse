@@ -11,7 +11,7 @@
 	
 	
 	try{
-		ResultSet rs = stm.executeQuery("SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'");
+		ResultSet rs = stm.executeQuery("SELECT * FROM admin WHERE username = '" + username + "' AND password = '" + password + "'");
 		
 		// If no user is found
 		if(rs.next()){

@@ -41,13 +41,31 @@
 			<a class = 'myLink' disabled><li style = "background-color: #363635; color: white;"><i class="fa fa-user-circle" aria-hidden="true"></i></li></a>
 			<%
 				if(url.equals("/admin/dashboard.jsp")){
-					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li class = 'active'><i class = 'fas fa-industry'></i></li></a>");
-                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auction Items' class = 'myLink' href='addItem.jsp'><li><i class='fas fa-plus-square'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li class = 'active'><i class = 'fas fa-home'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auctions' class = 'myLink' href='auction.jsp'><li><i class = 'fas fa-building'></i></li></a>");
+                    out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending Lot' class = 'myLink' href='pendinglot.jsp'><li><i class='fas fa-book'></i></li></a>");
 				}
 				else if(url.equals("/admin/addItem.jsp")){
-					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li><i class = 'fas fa-industry'></i></li></a>");
-					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auction Items' class = 'myLink' href='addItem.jsp'><li class = 'active'><i class='fas fa-plus-square'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li><i class = 'fas fa-home'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auctions' class = 'myLink' href='auction.jsp'><li><i class = 'fas fa-building'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending Lot' class = 'myLink' href='pendinglot.jsp'><li><i class='fas fa-book'></i></li></a>");
 				}
+				else if(url.equals("/admin/pendinglot.jsp")){
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li><i class = 'fas fa-home'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auctions' class = 'myLink' href='auction.jsp'><li><i class = 'fas fa-building'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending Lot' class = 'myLink' href='pendinglot.jsp'><li class = 'active'><i class='fas fa-book'></i></li></a>");
+				}
+				else if(url.equals("/admin/auction.jsp")){
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li><i class = 'fas fa-home'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auctions' class = 'myLink' href='auction.jsp'><li class = 'active'><i class = 'fas fa-building'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending Lot' class = 'myLink' href='pendinglot.jsp'><li><i class='fas fa-book'></i></li></a>");
+				}
+				else if(url.equals("/admin/displayItems.jsp")){
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Dashboard' class = 'myLink' href='dashboard.jsp'><li><i class = 'fas fa-home'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Auctions' class = 'myLink' href='auction.jsp'><li class = 'active'><i class = 'fas fa-building'></i></li></a>");
+					out.println("<a data-toggle = 'tooltip' data-placement = 'right' title = 'Pending Lot' class = 'myLink' href='pendinglot.jsp'><li><i class='fas fa-book'></i></li></a>");
+				}
+
 			%>
             <!-- Button trigger modal -->
             <a class = 'myLink' data-toggle="modal" data-target="#modelId"><li data-toggle = 'tooltip' data-placement = 'right' title = 'Logout'><span class='glyphicon glyphicon-log-out'></span></li></a>
@@ -74,5 +92,7 @@
             </div>
 		</ul>
 	</div>
+
+
 
 

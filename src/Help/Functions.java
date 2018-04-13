@@ -19,7 +19,7 @@ public class Functions {
     public int generateKey() throws MtException, ClassNotFoundException, SQLException {
         Connect c = new Connect();
         Statement stm = c.getStatement();
-        ResultSet rs = stm.executeQuery("SELECT MAX(item_lot_number) FROM auction_items");
+        ResultSet rs = stm.executeQuery("SELECT MAX(item_lot_number) FROM all_auction_items");
         try{
             while(rs.next()) {
                 key = Integer.parseInt(rs.getString(1)) + 1;
@@ -27,6 +27,23 @@ public class Functions {
         }
         catch(Exception e){
             key = 52432345;
+        }
+
+        c.closeConnection();
+        return key;
+    }
+
+    public int generateAuctionKey() throws MtException, ClassNotFoundException, SQLException {
+        Connect c = new Connect();
+        Statement stm = c.getStatement();
+        ResultSet rs = stm.executeQuery("SELECT MAX(auction_id) FROM auction");
+        try{
+            while(rs.next()) {
+                key = Integer.parseInt(rs.getString(1)) + 1;
+            }
+        }
+        catch(Exception e){
+            key = 35243;
         }
 
         c.closeConnection();

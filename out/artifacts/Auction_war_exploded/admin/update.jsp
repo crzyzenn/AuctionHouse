@@ -76,15 +76,15 @@
             }
 
 
-            String query = "UPDATE auction_items SET artist_name = '"+ formValues.get("name") + "', production_year = '" + formValues.get("date") + "', category =  '" + formValues.get("category") + "', medium = '" + formValues.get("medium") + "', type = '" + formValues.get("frame") + "', dimensions =  '" + formValues.get("dimensions") + "', description = '" + formValues.get("description") + "', price = '" + formValues.get("price") + "', image_file = '" + imageFile + "', weight = '" + formValues.get("weight") + "' WHERE item_lot_number = " + formValues.get("item_lot_number");
+            String query = "UPDATE all_auction_items SET piece_title = '"+ formValues.get("piece_title") + "', production_date = '" + formValues.get("date") + "', category =  '" + formValues.get("category") + "', medium = '" + formValues.get("medium") + "', frame = '" + formValues.get("frame") + "', dimensions =  '" + formValues.get("dimensions") + "', description = '" + formValues.get("description") + "', price = '" + formValues.get("price") + "', item_image = '" + imageFile + "', weight = '" + formValues.get("weight") + "' WHERE item_lot_number = " + formValues.get("item_lot_number");
             out.println(query);
             stm.executeQuery(query);
             con.closeConnection();
-            response.sendRedirect("addItem.jsp?updated");
+            response.sendRedirect("pendinglot.jsp?updated");
         } catch (Exception e) {
             con.closeConnection();
             out.println(e.getMessage());
-            response.sendRedirect("addItem.jsp?updated");
+            response.sendRedirect("pendinglot.jsp?updated");
         }
     } else {
         con.closeConnection();

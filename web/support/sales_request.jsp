@@ -58,12 +58,12 @@
     <tr>
         <td>
             <!-- Button trigger modal -->
-            <p style = "cursor: pointer;" data-toggle="modal" data-target="#modelId<%=rs.getString(2)%>">
+            <p style = "cursor: pointer;" data-toggle="modal" data-target="#modelId<%=rs.getString(1)%>">
                 <%out.println(rs.getString(2));%>
             </p>
 
             <!-- Modal -->
-            <div class="modal fade" id="modelId<%=rs.getString(2)%>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            <div class="modal fade" id="modelId<%=rs.getString(1)%>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                  aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -97,7 +97,7 @@
 
 
         </td>
-        <td><%out.println(rs.getString(6));%></td>
+        <td><%out.println(rs.getString(5));%></td>
 
         <td>
             <!--Approval modal-->

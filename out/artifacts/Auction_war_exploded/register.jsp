@@ -6,9 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:include page="index.jsp"></jsp:include>
+    <jsp:include page="index.jsp"></jsp:include>
 
-<section class = "homeRight pull-right">
+    <section class = "homeRight pull-right">
+        <ul class="breadcrumb">
+            <li><a href="home.jsp">Home</a></li>
+            <li class="active"><a href="register.jsp">Register</a></li>
+        </ul>
     <%
         if(request.getParameter("registered") != null){
 //            out.println("<h2 class='text-center'>Thank you for registering!</h2>");
@@ -47,7 +51,7 @@
                         <table class="formTable">
                             <thead>
                             </thead>
-                            <tbody>
+                            <tbody style="color: black;">
                             <tr>
                                 <td>First Name</td>
                                 <td>
@@ -166,7 +170,7 @@
                     <table class="formTable" id = "registerForm">
                         <thead>
                         </thead>
-                        <tbody>
+                        <tbody style="color:black">
                             <tr>
                                 <td>First Name</td>
                                 <td>

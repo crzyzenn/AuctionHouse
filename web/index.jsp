@@ -8,11 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*, Help.Connect" %>
 <%
-  Connect conn = new Connect();
-  Statement stm = conn.getStatement();
-  ResultSet rs = stm.executeQuery("SELECT * FROM users") ;
-
-  conn.closeConnection();
 
 //  Get request URL
   String url = request.getRequestURI();
@@ -38,7 +33,7 @@
     <!--</nav>-->
 
   <section class="homeLeftBar pull-left">
-    <a class="navbar-brand" href="index.jsp"><img src="Images/logo.jpg" alt=""></a>
+    <a class="navbar-brand" href="home.jsp"><img src="Images/logo.jpg" alt=""></a>
 
     <div id = 'logStatus'>
       <%
@@ -59,9 +54,3 @@
     </div>
 
 </section>
-
-
-
-
-</body>
-</html>

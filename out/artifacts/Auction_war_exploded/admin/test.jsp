@@ -14,5 +14,4 @@
     PreparedStatement stm = conn.prepareStatement("INSERT INTO imagetest values (?)")
     stm.setObject(1, );
 
-
 %>

@@ -87,23 +87,32 @@
 
 
                 //	   // Get item lot number
-//                Functions ln = new Functions();
-//                int item_lot_number = ln.generateKey();
+                Functions ln = new Functions();
+                int item_lot_number = ln.generateKey();
 
-                String query = "INSERT INTO all_auction_items VALUES ('" + formValues.get("pNumber") + "','" + formValues.get("piece_title") + "', '" + formValues.get("date") + "', '" + formValues.get("artist") + "', '" + formValues.get("category") + "', '" + formValues.get("description") + "', '" + formValues.get("medium") + "', '" + formValues.get("frame") + "', '" + formValues.get("dimensions") + "', '" + formValues.get("price") + "',  '" + imageFile[0] + "', '" + imageFile[1] + "' ,'" + formValues.get("weight") + "')";
-                        out.println(query);
-                stm.executeQuery(query);
+                String query = "INSERT INTO all_auction_items VALUES (" + item_lot_number + ", 0, '" + formValues.get("pNumber") + "','" + formValues.get("piece_title") + "', '" + formValues.get("date") + "', '" + formValues.get("artist") + "', '" + formValues.get("category") + "', '" + formValues.get("description") + "', '" + formValues.get("medium") + "', '" + formValues.get("frame") + "', '" + formValues.get("dimensions") + "', '" + formValues.get("price") + "',  '" + imageFile[0] + "', '" + imageFile[1] + "' ,'" + formValues.get("weight") +"')";
+                out.println(query);
+                try{
+                    stm.executeQuery(query);
+                }
+                catch(Exception e1){
 
-//                for(Map.Entry a : formValues.entrySet()){
-//                    out.println(a.getKey() + " = " + a.getValue() + "<br>");
+                }
+//                Update the client_request's value to set the item as accepted into the pending lot
+                String q = "UPDATE client_requests SET evaluator_confirmation = true WHERE oid = '" + formValues.get("oid") + "'";
+                stm.executeQuery(q);
+
+//                for (Map.Entry a : formValues.entrySet()){
+//                    out.println(a.getKey() + " = " + a.getValue());
 //                }
 
+
                 con.closeConnection();
-//                response.sendRedirect("addItem.jsp?added");
+                response.sendRedirect("dashboard.jsp?added");
             } catch (Exception e) {
                 con.closeConnection();
                 out.println(e.getMessage());
-//                response.sendRedirect("addItem.jsp?added");
+                response.sendRedirect("dashboard.jsp?added");
             }
         } else {
             out.println("Fill the form again!");

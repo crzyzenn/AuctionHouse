@@ -26,10 +26,104 @@
         }
 
     }
+
+//    Delete an auction
+    else if(request.getParameter("deleteAuction") != null){
+        Connect con = new Connect();
+        Statement stm = con.getStatement();
+        try{
+            stm.executeQuery("DELETE FROM auction WHERE auction_id = " + request.getParameter("id"));
+            response.sendRedirect("auction.jsp?deleted=" + request.getParameter("id"));
+            con.closeConnection();
+        }
+        catch (Exception e1){
+            response.sendRedirect("auction.jsp?deleted=" + request.getParameter("id"));
+//            out.println(e1.getMessage());
+            con.closeConnection();
+        }
+
+    }
+
+
+
     else if(request.getParameter("logout") != null){
         session.invalidate();
         response.sendRedirect("index.jsp");
     }
+
+    // Adding a new auction
+    else if(request.getParameter("addAuction") != null){
+        Connect con = new Connect();
+        Statement stm = con.getStatement();
+        String auctionName = request.getParameter("name");
+        String auctionDate= request.getParameter("date");
+        String time= request.getParameter("time");
+        String theme= request.getParameter("theme");
+        String venue= request.getParameter("venue");
+        Functions key = new Functions();
+        int idx = key.generateAuctionKey();
+        try{
+            String query = "INSERT INTO auction VALUES (" + idx + ", '"+auctionName+"', '"+theme +"', '" + auctionDate + "', '" +venue + "', '" + time +"')";
+//            out.println(query);
+            stm.executeQuery(query);
+            response.sendRedirect("auction.jsp?added=" + idx);
+            con.closeConnection();
+        }
+        catch (Exception e1){
+            response.sendRedirect("auction.jsp?added=" + idx);
+//            response.sendRedirect("addItem.jsp?error=" + request.getParameter("token"));
+            con.closeConnection();
+        }
+    }
+
+    // Updation the auction
+    else if(request.getParameter("updateAuction") != null){
+        Connect con = new Connect();
+        Statement stm = con.getStatement();
+        String auctionName = request.getParameter("name");
+        String auctionDate= request.getParameter("date");
+        String time= request.getParameter("time");
+        String theme= request.getParameter("theme");
+        String venue= request.getParameter("venue");
+        int id = Integer.parseInt(request.getParameter("id"));
+//        Functions key = new Functions();
+//        int idx = key.generateAuctionKey();
+        try{
+            String query = "UPDATE auction SET auction_name = '"+auctionName+"', auction_theme =  '"+theme +"', auction_date = '" + auctionDate + "', venue = '" +venue + "', time = '" + time +"' WHERE auction_id = " + id;
+            out.println(query);
+            stm.executeQuery(query);
+            response.sendRedirect("auction.jsp?updated");
+            con.closeConnection();
+        }
+        catch (Exception e1){
+            response.sendRedirect("auction.jsp?updated");
+//            response.sendRedirect("addItem.jsp?error=" + request.getParameter("token"));
+            con.closeConnection();
+        }
+    }
+    else if(request.getParameter("publishItem") != null){
+        Connect con = new Connect();
+        Statement stm = con.getStatement();
+        int auction_id = Integer.parseInt(request.getParameter("auction"));
+        int id = Integer.parseInt(request.getParameter("id"));
+//        Functions key = new Functions();
+//        int idx = key.generateAuctionKey();
+        try{
+            String query = "UPDATE all_auction_items SET auction_id = "+auction_id+" WHERE item_lot_number = " + id;
+            out.println(query);
+            stm.executeQuery(query);
+            response.sendRedirect("pendinglot.jsp?published");
+            con.closeConnection();
+        }
+        catch (Exception e1){
+            response.sendRedirect("pendinglot.jsp?published");
+//            response.sendRedirect("addItem.jsp?error=" + request.getParameter("token"));
+            out.println(e1.getMessage());
+            con.closeConnection();
+        }
+    }
+
+
     else {
         Connect con = new Connect();
         Statement stm = con.getStatement();
@@ -119,6 +213,7 @@
                 response.sendRedirect("addItem.jsp?added");
             }
         } else {
+            con.closeConnection();
             out.println("Fill the form again!");
         }
 

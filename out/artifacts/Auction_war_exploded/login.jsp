@@ -15,6 +15,10 @@
 
 
 <section class = "homeRight pull-right">
+    <ul class="breadcrumb">
+        <li><a href="home.jsp">Home</a></li>
+        <li class="active"><a href="login.jsp">Login</a></li>
+    </ul>
     <div class="jumbotron">
         <div class="container" style="
         width: 45%;
