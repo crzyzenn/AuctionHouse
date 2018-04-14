@@ -7,45 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a48a038-c04f-4ec7-8f91-b169d8754999" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/admin/auction.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/displayItems.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/pendinglot.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/support/paste.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/viewcatalog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/WEB-INF/classes/Help/Functions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/WEB-INF/classes/Help/Functions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/addItem.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/essentials.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/essentials.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/functions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/functions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/loginResponse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/loginResponse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/admin/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/bs/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/bs/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/formcontrol.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/formcontrol.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/layout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/sales_request.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Auction_war_exploded/support/sales_request.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Auction/Help/Functions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Auction/Help/Functions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Help/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/addItem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/addItem.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/essentials.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/essentials.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin/functions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/functions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/loginResponse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/loginResponse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/bs/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/pendinglot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/pendinglot.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/support/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/support/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/support/formcontrol.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/support/formcontrol.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/support/layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/support/layout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/support/sales_request.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/support/sales_request.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/viewcatalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/viewcatalog.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +26,8 @@
       <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/support/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7414">
-              <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="2" />
+            <state relative-caret-position="252">
+              <caret line="362" column="36" lean-forward="true" selection-start-line="362" selection-start-column="36" selection-end-line="362" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -69,8 +35,8 @@
       <file leaf-file-name="pendinglot.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin/pendinglot.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="3960">
+              <caret line="239" column="64" lean-forward="true" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -78,65 +44,8 @@
       <file leaf-file-name="functions.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin/functions.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/bs/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="245" column="22" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="30" column="121" selection-start-line="30" selection-start-column="121" selection-end-line="30" selection-end-column="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewcatalog.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/viewcatalog.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding>
-                <element signature="e#1973#1980#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="406">
+              <caret line="202" column="62" lean-forward="true" selection-start-line="202" selection-start-column="62" selection-end-line="202" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -144,8 +53,26 @@
       <file leaf-file-name="formcontrol.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/support/formcontrol.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+            <state relative-caret-position="275">
+              <caret line="93" column="35" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="93" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewcatalog.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/viewcatalog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="101" column="102" lean-forward="true" selection-start-line="101" selection-start-column="102" selection-end-line="101" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -243,14 +170,14 @@
         <option value="$PROJECT_DIR$/web/support/paste.jsp" />
         <option value="$PROJECT_DIR$/web/support/formcontrol.jsp" />
         <option value="$PROJECT_DIR$/web/support/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/pendinglot.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/functions.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/bs/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/pendinglot.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/functions.jsp" />
         <option value="$PROJECT_DIR$/web/viewcatalog.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
       </list>
     </option>
   </component>
@@ -270,8 +197,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="y" value="-28" />
-    <option name="width" value="2485" />
-    <option name="height" value="1474" />
+    <option name="width" value="2487" />
+    <option name="height" value="1476" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -281,9 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,12 +233,27 @@
             </path>
             <path>
               <item name="Auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auction" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auction" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auction" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,7 +347,7 @@
       <listeners />
     </configuration>
     <configuration name="Tomcat 9.0.6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home.jsp" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
@@ -522,11 +461,12 @@
       <workItem from="1523587881935" duration="7599000" />
       <workItem from="1523602432155" duration="24871000" />
       <workItem from="1523630958938" duration="6992000" />
+      <workItem from="1523681422414" duration="2031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139584000" />
+    <option name="totallyTimeSpent" value="141615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="898" extended-state="6" />
@@ -553,7 +493,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33881164" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15105946" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15105946" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -859,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/support/formcontrol.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/support/sales_request.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1657">
@@ -873,51 +806,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/support/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7414">
-          <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/functions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/pendinglot.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bs/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="5390">
           <caret line="245" column="22" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="770">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="660">
           <caret line="30" column="121" selection-start-line="30" selection-start-column="121" selection-end-line="30" selection-end-column="121" />
         </state>
       </provider>
@@ -929,13 +834,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/support/formcontrol.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="93" column="35" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="93" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/functions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="202" column="62" lean-forward="true" selection-start-line="202" selection-start-column="62" selection-end-line="202" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/support/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="362" column="36" lean-forward="true" selection-start-line="362" selection-start-column="36" selection-end-line="362" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/pendinglot.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="239" column="64" lean-forward="true" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/viewcatalog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#1973#1980#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="101" column="102" lean-forward="true" selection-start-line="101" selection-start-column="102" selection-end-line="101" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>

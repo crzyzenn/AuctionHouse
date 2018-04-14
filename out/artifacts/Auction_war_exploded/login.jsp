@@ -22,9 +22,10 @@
     <div class="jumbotron">
         <div class="container" style="
         width: 45%;
-        background-color: #ffffff;
-        color: #363635;
+        background-color: #4d2e70;
+        color: #ffffff;
         padding: 5em;
+
 
 ">
             <%

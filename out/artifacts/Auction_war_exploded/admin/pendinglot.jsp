@@ -52,7 +52,7 @@
 <div id = 'right-container' style = "overflow-y: scroll">
 
 
-    <!-- Adding an item -->
+    <!-- Adding an new piece -->
     <a data-toggle="modal" href='#modal-id'><span style = 'color:white; cursor: pointer;' class = 'glyphicon glyphicon-plus-sign glyph'></span></a>
     <div class="modal fade" id="modal-id">
         <div class="modal-dialog">
@@ -66,96 +66,169 @@
                     <form action="functions.jsp" method="POST" id = 'updateData' class = 'form-group' enctype = "multipart/form-data">
 
                         <table class="table table-responsive" id = 'uploadDiv'>
-
                             <tbody>
-                            <tr>
-                                <td>Name of the artist</td>
-                                <td>
-                                    <input type="text" name="name" class="form-control" required="required" title="">
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Production Year</td>
-                                <td>
-                                    <input type="date" name="date" class="form-control" required="required" title="">
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Category</td>
-                                <td>
-                                    <select name = "category" id = "category" class = "form-control">
-                                        <option value = "Drawing">Drawing</option>
-                                        <option value = "Painting">Paintings</option>
-                                        <option value = "Photography">Photographic Images</option>
-                                        <option value = "Sculpture">Sculptures</option>
-                                        <option value = "Carving">Carvings</option>
-                                    </select>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr class = 'new'>
-                                <td>Medium</td>
-                                <td>
-                                    <select name = 'medium' class = 'form-control'>
-                                        <option value = 'Pencil'>Pencil</option>
-                                        <option value = 'Ink'>Ink</option>
-                                        <option value = 'Charcoal'>Charcoal</option>
-                                        <option value = 'Other'>Other</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr class = 'new'>
-                                <td>Type</td>
-                                <td>
-                                    <input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>
-                                    <input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>
-                                </td>
-                            </tr>
-                            <tr class = 'new'>
-                                <td>Dimensions</td>
-                                <td>
-                                    <input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Item Description</td>
-                                <td>
-                                    <textarea name="description" id="desc" class="form-control" rows="10"></textarea>
-                                </td>
-                                <td></td>
-                            </tr>
+                                <tr>
+                                    <td>Seller's Name*</td>
+                                    <td>
+                                        <!--<input type="text" name = "" value = "">-->
+                                        <div class="input-group">
+                                            <input type="text" name="name" class="form-control" required="required" title="" value = "Auction House">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><i class="far fa-address-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </td>
 
-                            <tr>
-                                <td>Price</td>
-                                <td>
-                                    <input type="number" name="price" step="any" id="price" class="form-control" value="" required="required" placeholder = "$" title="">
-                                </td>
-                                <td></td>
-                            </tr>
+                                </tr>
 
-                            <tr>
-                                <td>Image</td>
-                                <td>
-                                    <input type="file" name="image" class="form-control" value="" required="required" title="">
-                                </td>
-                                <td></td>
-                            <tr>
+                                <tr>
+                                    <td>Seller's Telephone Number (Primary)*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="number" name="pNumber" class="form-control" required="required" title="" value = "9852343256">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-phone-square"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
 
-                            </tbody>
-                        </table>
+                                </tr>
 
-                        <!-- End of form -->
+                                <tr>
+                                    <td>Seller's Telephone Number (Secondary)</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="number"  name="sNumber" class="form-control"  title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-phone-square"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Address*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="address" class="form-control" required="required" title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-building"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <td>Piece Title*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="piece_title" class="form-control" required="required" title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-pencil-alt"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Period / Date*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="date" name="date" class="form-control" required="required" title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-calendar-alt"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Artist(s)*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="artist" class="form-control" required="required" title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-pencil-alt"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Category*</td>
+                                    <td>
+                                        <select name = "category" id = "category" class = "form-control">
+                                            <option value = "Drawing">Drawing</option>
+                                            <option value = "Painting">Paintings</option>
+                                            <option value = "Photography">Photographic Images</option>
+                                            <option value = "Sculpture">Sculptures</option>
+                                            <option value = "Carving">Carvings</option>
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr class = 'new'>
+                                    <td>Medium*</td>
+                                    <td>
+                                        <select name = 'medium' class = 'form-control'>
+                                            <option value = 'Pencil'>Pencil</option>
+                                            <option value = 'Ink'>Ink</option>
+                                            <option value = 'Charcoal'>Charcoal</option>
+                                            <option value = 'Other'>Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class = 'new'>
+                                    <td>Type*</td>
+                                    <td>
+                                        <input type = 'radio' name = 'frame' value = 'Framed' checked> Framed<br>
+                                        <input type = 'radio' name = 'frame' value = 'Not Framed'> Not Framed<br>
+                                    </td>
+                                </tr>
+                                <tr class = 'new'>
+                                    <td>Dimensions*</td>
+                                    <td>
+                                        <input type = 'text' name = 'dimensions' class = 'form-control' placeholder = 'Width x Height'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lot Description*</td>
+                                    <td>
+                                        <textarea name="description" id="desc" class="form-control" rows="10"></textarea>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Reserved Price*</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="number" name="price" step="any" id="price" class="form-control" value="" required="required" placeholder = "$" title="">
+                                            <div class="input-group-addon">
+                                                <span class="input-group-text"><span class = "fa fa-dollar-sign"></span></span>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Image*</td>
+                                    <td>
+                                        <input type="file" name="image" class="form-control" value="" required="required" title="">
+                                    </td>
+                                    <td></td>
+                                <tr>
+
+                                </tbody>
+                            </table>
+                    </div>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-                </form>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
         </div>
-    </div>
     <!-- End of adding an item -->
 
     <form class="form-inline pull-right" method = "POST">

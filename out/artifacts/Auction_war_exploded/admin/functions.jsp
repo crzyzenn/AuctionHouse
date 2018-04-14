@@ -97,7 +97,7 @@
         }
         catch (Exception e1){
             response.sendRedirect("auction.jsp?updated");
-//            response.sendRedirect("addItem.jsp?error=" + request.getParameter("token"));
+
             con.closeConnection();
         }
     }
@@ -106,8 +106,6 @@
         Statement stm = con.getStatement();
         int auction_id = Integer.parseInt(request.getParameter("auction"));
         int id = Integer.parseInt(request.getParameter("id"));
-//        Functions key = new Functions();
-//        int idx = key.generateAuctionKey();
         try{
             String query = "UPDATE all_auction_items SET auction_id = "+auction_id+" WHERE item_lot_number = " + id;
             out.println(query);
@@ -117,7 +115,6 @@
         }
         catch (Exception e1){
             response.sendRedirect("pendinglot.jsp?published");
-//            response.sendRedirect("addItem.jsp?error=" + request.getParameter("token"));
             out.println(e1.getMessage());
             con.closeConnection();
         }
@@ -130,7 +127,7 @@
 
         // Get working directory
         String filePath = "C:\\Users\\Cryzenn\\ideawspace\\Auction\\web\\Images";
-        //out.println(filePath);
+
         Map<String, String> formValues = new HashMap<String, String>();
 
 
@@ -162,38 +159,31 @@
                         // Get the uploaded file parameters
                         String fieldName = item.getFieldName();
                         String fileName = item.getName();
-                        //                out.println(fileName);
+
                         boolean isInMemory = item.isInMemory();
                         long sizeInBytes = item.getSize();
-                        //String filePath = getServletContext().getRealPath("/") + "admin\\Images";
-                        //out.println(filePath);
+
+
 
 
                         // Name of the image file
                         imageFile = fileName.substring(fileName.lastIndexOf("\\") + 1);
-                        //	         	out.println(fileName);
+
 
 
                         // Write the file
                         if (fileName.lastIndexOf("\\") >= 0) {
                             file = new File(filePath +
                                     fileName.substring(fileName.lastIndexOf("\\")));
-                            //	               out.println(filePath + fileName.substring( fileName.lastIndexOf("\\")));
+
                         } else {
                             file = new File(filePath + "\\" +
                                     fileName.substring(fileName.lastIndexOf("\\") + 1));
-                            //	               out.println(filePath + "\\" +fileName.substring( fileName.lastIndexOf("\\")+1));
+
                         }
-                        //out.println(filePath);
+
                         // Upload the file
                         item.write(file);
-                        //	            out.println(file);
-                        // Display from values
-
-                        //                PreparedStatement stm = conn.prepareStatement("INSERT INTO imagetest values (?)");
-                        //                stm.setObject(1, file);
-                        //                stm.execute();
-                        //                conn.close();
                     }
                 }
 
@@ -202,15 +192,15 @@
                 Functions ln = new Functions();
                 int item_lot_number = ln.generateKey();
 
-                String query = "INSERT INTO auction_items VALUES (" + item_lot_number + ",'" + formValues.get("name") + "', '" + formValues.get("date") + "', '" + formValues.get("category") + "', '" + formValues.get("medium") + "', '" + formValues.get("frame") + "', '" + formValues.get("dimensions") + "', '" + formValues.get("description") + "', '" + formValues.get("price") + "', '" + imageFile + "', '" + formValues.get("weight") + "')";
-                //        out.println(query);
+                String query = "INSERT INTO all_auction_items VALUES (" + item_lot_number + ", 0, '" + formValues.get("pNumber") + "','" + formValues.get("piece_title") + "', '" + formValues.get("date") + "', '" + formValues.get("artist") + "', '" + formValues.get("category") + "', '" + formValues.get("description") + "', '" + formValues.get("medium") + "', '" + formValues.get("frame") + "', '" + formValues.get("dimensions") + "', '" + formValues.get("price") + "',  '" + imageFile + "', ' ' ,'" + formValues.get("weight") +"')";
+                out.println(query);
                 stm.executeQuery(query);
                 con.closeConnection();
-                response.sendRedirect("addItem.jsp?added");
+                response.sendRedirect("pendinglot.jsp?added");
             } catch (Exception e) {
                 con.closeConnection();
                 out.println(e.getMessage());
-                response.sendRedirect("addItem.jsp?added");
+                response.sendRedirect("pendinglot.jsp?added");
             }
         } else {
             con.closeConnection();
